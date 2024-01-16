@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block starts %}
+
+{% if images %}
+<div class="d-flex justify-content-center">
+    {% for image in images %}
+    <img src="{{image}}" alt="generatedImage" width="200px" height="200px" class="mx-3 card">
+    {% endfor %}
+</div>
+{% endif %}
+
+{% endblock %}
